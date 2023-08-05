@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            font-family: Arial, Helvetica, sans-serif ;
+
+        }
+        .container{
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100vh;
+            animation: animate 10s ease-in-out infinite;
+            background-size: cover;
+        }
+        .outer{
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100vh;
+            background: rgba(0,0,0,0.5);
+            
+
+        }
+        .details{
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%,-50%);
+            text-align: center;
+            
+        }
+        .details h1{
+            font-size: 4em;
+            color: #fff; 
+        }
+        details h2{
+            text-transform: capitalize;
+            color: white;
+
+        }
+        .details h2 span:nth-child(1){
+            color: aqua;
+        }
+        .details h2 span:nth-child(2){
+           color: coral;
+        }
+
+
+        @keyframes animate {
+            
+            0%{
+                 background-image: url(./photos/dog7.jpg);
+                }
+            25%{
+                background-image: url(./photos/dog2.jpg);
+            }
+            50%{
+                background-image: url(./photos/dog5.jpg);
+            }
+            75%{
+                background-image: url(./photos/dog.jpeg);
+            }
+            100%{
+                background-image: url(./photos/dog3.jpg);
+            }
+        }
+
+           
+        .navbar{
+            background-color: black;
+            border-radius: 30px;
+            
+        }
+        .navbar ul{
+            overflow: auto;
+        }
+        .navbar li{
+            float:left;
+            list-style: none; 
+            margin: 13px 20px;
+            
+        }
+        .navbar li a{
+            padding: 3px 3px;
+            text-decoration: none;
+            color: white;
+        }
+        .navbar li a:hover{
+            color: red
+        }
+        .search{
+            float: top right;
+            color: white;
+            padding: 12px 75px;
+            margin-left: 1100px;
+        }
+        .navbar input{
+            border: 2px solid black;
+            border-radius: 14px;
+            padding: 3px 17px;
+            width: 129px;
+        }
+        .navbar ul li ul li{
+            background-color: #000;
+            border: none;
+            display: none;
+        }
+        .navbar ul li:hover ul li{
+            display: block;
+        }
+      
+    </style>
+</head>
+<body>
+  
+    
+    <div class="container">
+        
+        <div class="outer">
+            <header>
+                <nav class="navbar">
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Ways to Help</a>
+                            <ul> 
+                        <li><a href="#">Adopt</a></li>
+                        <li><a href="#">Fund</a></li>
+                        <li><a href="#">Donate</a></li>
+                        <li><a href="#">volunteer</a></li>
+                    </ul>
+                        
+                        </li>
+                        
+                        <li ><a href="#">About</a>
+                            <ul>
+                                <li><a href="#">Contact us</a></li>
+                            </ul>
+                        </li>
+                        
+                        
+                        
+                        
+                        <div class="search">
+                            <input type="text" name="search" id="search" placeholder="Search this website">
+                        </div>
+                    </ul>
+                </nav>
+            </header>
+            <div class="details">
+                <h1> Homeless Animal Rescue Organization </h1>
+                <h2 >
+                    <span> Be Their Voice </span>
+                    <span> Save Their Life</span>
+                </h2>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
